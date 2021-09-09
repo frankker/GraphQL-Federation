@@ -1,0 +1,35 @@
+type Query {
+    shows(titleFilter: String): [Show]
+}
+
+type Show @key(fields: "id") {
+    id: ID
+    title: String
+    releaseYear: Int
+}
+
+#type Query {
+#    shows(titleFilter: String): [Show]
+#    showsByHeaders(titleFilter: String): [Show]
+#    showsByReqParam(titleFilter: String): [Show]
+#    movies(titleFilter: String): [Show]
+#    allShows(titleFilter: String): [Show]
+#}
+#
+#type Show {
+#    id: ID
+#    title: String
+#    releaseYear: Int
+#}
+#
+#
+#
+#
+#type Mutation {
+#    addRating(title: String, stars: Int):Rating
+#    addRating2(title: String, stars: Int):Rating
+#}
+#
+#type Rating {
+#    avgStars: Float
+#}
