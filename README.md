@@ -33,9 +33,3 @@ The following is a federated query that should work.
   }
 }
 ```
-
-Other DGS framework examples
-----
-
-* Standalone DGS in [Java](https://github.com/Netflix/dgs-examples-java)
-* Standalone DGS in [Kotlin](https://github.com/Netflix/dgs-examples-kotlin)
