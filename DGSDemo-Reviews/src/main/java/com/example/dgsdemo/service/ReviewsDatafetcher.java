@@ -6,14 +6,13 @@ import com.netflix.graphql.dgs.DgsComponent;
 import com.netflix.graphql.dgs.DgsData;
 import com.netflix.graphql.dgs.DgsDataFetchingEnvironment;
 import com.netflix.graphql.dgs.DgsEntityFetcher;
-
-
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @DgsComponent
 public class ReviewsDatafetcher {
-
     Map<String, List<Review>> reviews = new HashMap<>();
 
     public ReviewsDatafetcher() {

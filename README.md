@@ -34,6 +34,15 @@ The following is a federated query that should work.
 }
 ```
 
+Additionally, you can get results by sending a POST request
+``` http post
+curl --location --request POST 'http://localhost:8080/graphql' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+"query": "{shows(titleFilter:\"Stranger Things\") {id title releaseYear}}"
+}'
+```
+
 Other DGS framework examples
 ----
 
